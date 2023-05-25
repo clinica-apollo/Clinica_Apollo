@@ -5,7 +5,7 @@ export function Doneaza() {
   return (
     <>
       <section className="sub-header">
-      <Navbar />
+        <Navbar />
         <h1>Doneaza</h1>
       </section>
 

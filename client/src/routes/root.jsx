@@ -4,6 +4,7 @@ import Doctor1 from "../assets/doctor1.jpg";
 import Doctor2 from "../assets/doctor2.jpg";
 import Doctor3 from "../assets/doctor3.jpg";
 import { Footer } from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export function Root() {
   return (
@@ -18,9 +19,9 @@ export function Root() {
             <br /> numquam beatae nihil accusamus excepturi voluptas repudiandae
             repellat quis officia iure recusandae illo vero dolore?
           </p>
-          <a href="desprenoi.html" className="button-contact">
+          <Link to="/despre-noi" className="button-contact">
             Contact us
-          </a>
+          </Link>
         </div>
       </section>
       {/* despre noi */}
