@@ -81,9 +81,7 @@ export function Root() {
         </div>
       </section>
 
-      <footer>
-        <p>&copy; 2023 Apollo Clinic. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

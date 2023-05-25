@@ -68,9 +68,7 @@ export function DespreNoi() {
         </section>
       </div>
 
-      <footer>
-        <p>&copy; 2023 Apollo Clinic. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

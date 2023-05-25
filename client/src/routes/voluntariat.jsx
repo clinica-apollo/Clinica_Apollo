@@ -1,3 +1,4 @@
+import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 
 export function Voluntariat() {
@@ -115,9 +116,7 @@ export function Voluntariat() {
         </div>
       </div>
 
-      <footer>
-        <p>&copy; 2023 Apollo Clinic. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

@@ -7,6 +7,8 @@ export function Servicii() {
         <Navbar />
         <h1>Servicii</h1>
       </section>
+
+      <Footer />
     </>
   );
 }
