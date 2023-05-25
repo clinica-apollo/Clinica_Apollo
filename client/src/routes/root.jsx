@@ -3,6 +3,7 @@ import { Navbar } from "../components/Navbar";
 import Doctor1 from "../assets/doctor1.jpg";
 import Doctor2 from "../assets/doctor2.jpg";
 import Doctor3 from "../assets/doctor3.jpg";
+import { Footer } from "../components/Footer";
 
 export function Root() {
   return (
