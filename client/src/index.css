@@ -1,7 +1,7 @@
 *{
   margin:0;
   padding:0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Martel', sans-serif;
 }
 .header{
   min-height: 100vh;
@@ -12,6 +12,9 @@
   position: relative;
 
 }
+.logo{
+  width: auto;
+}
 nav{
   display:flex;
   padding: 2% 6%;
@@ -19,7 +22,7 @@ nav{
   align-items: center;
 }
 nav img{
-  width: 5vw;
+  width: 15em;
 
 }
 .nav-links{
@@ -89,6 +92,12 @@ nav .fa{
   display:none;
 }
 @media (max-width:768px){
+  .logo{
+    width: auto;
+  }
+  .nav img{
+    width: 50px;
+  }
   .text-box h1{
       font-size:20px;
   }
@@ -139,7 +148,7 @@ p{
 .row{
   margin-top: 5%;
   display:flex;
-  justify-content: space-between;
+ 
 }
 .ser-col{
   flex-basis: 45%;
@@ -166,11 +175,37 @@ h3{
       flex-direction: column;
   }
 }
-.despre{
-  width: 80%;
-  margin:auto;
+.servicii{
+  width:80%;
+  margin: auto;
+  text-align:center;
+  padding-top:100px;
+}
+h1{
+  font-size:36px;
+  font-weight: 600;
+}
+p{
+  color: #777;
+  font-size:14px;
+  line-height: 22px;
+  padding: 10px;
+}
+.row{
+  margin-top: 5%;
+  display:flex;
+  
+}
+
+h3{
   text-align: center;
-  padding-top: 50px;
+  font-weight: 600;
+margin: 10px 0;}
+.despre{
+  padding-top: 0;
+  width: 110%;
+  text-align: center;  
+  
 }
 .doctori-col{
   flex-basis: 32%;
@@ -182,9 +217,14 @@ h3{
 .doctori-col img{
   width: 100%;
   display: block;
+  object-fit: cover; 
+  aspect-ratio: 1/1; 
+}
+.ser h3{
+  color: #fff;
 }
 .layer{
-  background: transparent;
+  background: rgba(36,88,176,0.7);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -194,7 +234,7 @@ h3{
 
 }
 .layer:hover{
-  background: rgba(4,9,30,0.7);
+  background: transparent;
 }
 .layer h3{
   width:100%;
@@ -211,6 +251,24 @@ h3{
   bottom: 49%;
   opacity: 1;
 }
+.btn{
+  display:inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid  #3b6a91;
+  padding: 12px 34px;
+  font-size:20px;
+  background: #3b6a91;
+  position: relative;
+  cursor: pointer;
+
+}
+.btn:hover{
+border:1px solid #ffffff;
+background:transparent;
+transition: 1s;
+}
+
 /* despre noi */
 .sub-header{
   height: 50vh;
