@@ -19,7 +19,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 200px;
+    width: 5vw;
 
 }
 .nav-links{
@@ -162,10 +162,13 @@ h3{
     .row{
         flex-direction: column;
     }
+    .cont-el{
+        flex-direction: column;
+    }
 }
 .despre{
     width: 80%;
-    margin: auto;
+    margin:auto;
     text-align: center;  
     padding-top: 50px;
 }
@@ -208,7 +211,7 @@ h3{
     bottom: 49%;
     opacity: 1;
 }
-/* despre noi page */
+/* despre noi */
 .sub-header{
     height: 50vh;
     width: 100%;
@@ -222,61 +225,67 @@ h3{
     margin-top: 100px;
 }
 .despre-noi{
-    width: 80%;
     margin:auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    text-align:center;
 }
-.despre-col{
-    flex-basis: 48%;
-    padding: 30px 2px;
+@media (max-width: 768px)
+{
+    .despre-noi{
+        display: flex;
+        padding-top: 15%;
+        position: relative;
+    }
+    .container{
+        display: block;
+    }
+    
 }
-.despre-col h1{
-    padding-top:0;
-    text-align: center;
-}
-.despre-col p{
-    padding:15px 0 25px;
-    text-align: center;
-}
-.despre-btn{
-    align: center;
-
-}
-.btn-text{
-    display:inline-block;
-    text-decoration: none;
-    color:#000000;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size:13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-
-}
-.btn-text:hover{
-    border:1px solid #3b6a91;
-    background: #3b6a91;
-    transition: 1s;
+@media (max-width: 768px) and (orientation: landscape)
+{
+    .sub-header h1{
+        
+       margin-top: 100px;
+    }
+    .despre-noi{
+        padding-top: 5%;
+    }
+    .location{
+        padding-top: 20%;
+    }
+    .cont-el{ 
+        padding-top: 10%; 
+    }
 }
 .location{ /* map<3 */
-    width: 80%;
-    margin:auto;
-    padding:80px 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
 }
 .location iframe{
-    width:100%;
+    width:90%;
 }
-.contact{ /* date de contact */
-    width:80%;
-    margin:auto;
-
-}
+ /* date de contact */
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue;
+    text-align: center;
+  }
 .cont-col{
-    flex-basis: 48%;
-    margin-bottom: 30px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    text-align: center;
+    border: 3px solid green;
+} 
 .cont-col div{
     display: flex;
     align-items: center;
@@ -287,4 +296,10 @@ h3{
     color:#332cb868;
     margin:10px;
     margin-right:30px;
+}
+.cont-el{
+    box-sizing: border-box;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
 }
