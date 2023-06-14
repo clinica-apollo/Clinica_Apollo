@@ -6,8 +6,15 @@ export function NavbarAuth() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
+    const lastUser = localStorage.getItem(user);
+    if (lastUser) {
+      setUser(JSON.parse(lastUser));
+    }
+
     (async function () {
       const { user } = await request("/whoami");
+
+      localStorage.setItem("user", JSON.stringify(user));
 
       setUser(user);
     })();

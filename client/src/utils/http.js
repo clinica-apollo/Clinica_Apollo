@@ -1,9 +1,9 @@
-const SERVER_URL = `http://127.0.0.1:3042`;
+const SERVER_URL = `https://sad-chivalrous-wicked-brick.deploy.space`;
 
 export async function request(endpoint, {auth = true, ...options} = {}) {
   const url = new URL(endpoint, SERVER_URL);
   const token = auth
-    ? getToken()
+    ? localStorage.getItem("token")
     : null;
 
   const res = await fetch(url, {
@@ -22,14 +22,6 @@ export async function request(endpoint, {auth = true, ...options} = {}) {
   }
 
   return data;
-}
-
-function getToken() {
-  const token = localStorage.getItem("token");
-  if (token === null) {
-    raiseError(new Error("No authorization token found"));
-  }
-  return token;
 }
 
 function raiseError(error) {
