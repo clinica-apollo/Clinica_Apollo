@@ -14,27 +14,27 @@ export function Register() {
           <div className="input-group">
             <div className="input-field" id="nameField">
               <i className="fa-solid fa-user"></i>
-              <input type="text" placeholder="First name" />
+              <input type="text" placeholder="First name" required/>
             </div>
             <div className="input-field" id="nameField">
               <i className="fa-solid fa-user"></i>
-              <input type="text" placeholder="Last name" />
+              <input type="text" placeholder="Last name" required/>
             </div>
             <div className="input-field">
               <i className="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" required />
             </div>
             <div className="input-field">
               <i className="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" required/>
             </div>
             <div className="input-field">
               <i className="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Confirm password" />
+              <input type="password" placeholder="Confirm password" required/>
             </div>
             <div className="input-field">
               <i className="fa-solid fa-lock"></i>
-              <input type="checkbox" placeholder="Terms&conditions" />
+              <input type="checkbox" placeholder="Terms&conditions" required/>
             </div>
             <div className="input-field">
               <i className="fa-solid fa-lock"></i>
