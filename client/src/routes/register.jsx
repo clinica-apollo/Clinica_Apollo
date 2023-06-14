@@ -45,6 +45,7 @@ export function Register() {
                 Sign Up
               </button>
             </div>
+            <Link to="/login">Already have an account?</Link>
           </div>
         </form>
       </div>

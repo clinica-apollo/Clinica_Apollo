@@ -10,6 +10,7 @@ import { Voluntariat } from "./routes/voluntariat";
 import { Doneaza } from "./routes/doneaza";
 import { Login } from "./routes/login";
 import { Register } from "./routes/register";
+import { ResetPassword } from "./routes/reset-password";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/reset-password",
+    element: <ResetPassword />,
   },
 ]);
 
