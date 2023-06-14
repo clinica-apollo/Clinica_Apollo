@@ -6,36 +6,30 @@ export function DespreNoi() {
     <>
       <section className="sub-header">
         <Navbar />
-        <h1>Despre noi</h1>
       </section>
-      <section className="despre-noi">
-        <div className="row">
-          <div className="despre-col">
-            <h1>Suntem un spital bazat pe donatii</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Ullam maxime earum voluptates, dolor alias quas, iste doloremque a
-              temporibus vel aliquid voluptatum enim dolorum ipsum facere
-              debitis hic veniam. Vero!
-            </p>
-            <a href="doneaza.html" className="btn-text">
-              Fa o donatie
-            </a>
-          </div>
-        </div>
-      </section>
-      <section className="location">
+    <section className="about">
+      <div className="main">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5567.456746600069!2d21.212973767016255!3d45.75659119056593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1sen!2sro!4v1684862719317!5m2!1sen!2sro"
-          width="600"
-          height="450"
+          width="50%"
+          height="50%"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </section>
-      <div className="container">
+        <div className="all-text">
+          <h4>Despre noi</h4>
+          <h1>Descoperă unde ne găsești și cum să ajungi la noi</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis id ab totam error mollitia</p>
+          <div className="btn-txt">
+            <button type="button">Fa o donatie</button>
+            <button type="button">Programeaza-te</button>
+          </div>
+        </div>
+      </div>
+    </section>
+      {/* <div className="container">
         <section className="cont-el">
           <div className="row">
             <div className="cont-col">
@@ -67,7 +61,7 @@ export function DespreNoi() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
       <Footer />
     </>
