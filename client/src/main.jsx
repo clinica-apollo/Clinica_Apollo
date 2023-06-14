@@ -9,6 +9,7 @@ import { DespreNoi } from "./routes/desprenoi.jsx";
 import { Voluntariat } from "./routes/voluntariat";
 import { Doneaza } from "./routes/doneaza";
 import { Login } from "./routes/login";
+import { Register } from "./routes/register";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 ]);
 
