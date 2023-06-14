@@ -1,11 +1,19 @@
 {
   "name": "server",
-  "packageManager": "yarn@3.5.1",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "platformatic db start",
+    "deploy": "cp -R ../node_modules ./node_modules && plt deploy --keys ./clinica-apollo.plt.txt"
+  },
+  "devDependencies": {
+    "fastify": "^4.18.0"
+  },
   "dependencies": {
     "bcrypt": "^5.1.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
-    "pg": "^8.11.0"
+    "platformatic": "^0.26.1"
+  },
+  "engines": {
+    "node": "^18.8.0 || >=19"
   }
 }
