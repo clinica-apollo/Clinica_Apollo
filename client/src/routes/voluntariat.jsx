@@ -8,113 +8,19 @@ export function Voluntariat() {
         <Navbar />
         <h1>Voluntariat</h1>
       </section>
-      <div className="section">
-        <div className="ctnr-v">
-          <div className="row full-height justify-content-center">
-            <div className="col-12 text-center align-self-center py-5">
-              <div className="section pb-5 pt-5 pt-sm-2 text-center">
-                <h6 className="mb-0 pb-3">
-                  <span>Log In </span>
-                  <span>Sign Up</span>
-                </h6>
-                <input
-                  className="checkbox"
-                  type="checkbox"
-                  id="reg-log"
-                  name="reg-log"
-                />
-                <label for="reg-log"></label>
-                <div className="card-3d-wrap mx-auto">
-                  <div className="card-3d-wrapper">
-                    <div className="card-front">
-                      <div className="center-wrap">
-                        <div className="section text-center">
-                          <h4 className="mb-4 pb-3">Log In</h4>
-                          <div className="form-group">
-                            <input
-                              type="email"
-                              className="form-style"
-                              placeholder="Email"
-                            />
-                            <i className="input-icon uil uil-at"></i>
-                          </div>
-                          <div className="form-group mt-2">
-                            <input
-                              type="password"
-                              className="form-style"
-                              placeholder="Password"
-                            />
-                            <i className="input-icon uil uil-lock-alt"></i>
-                          </div>
-                          <a
-                            href="https://www.web-leb.com/code"
-                            className="btn mt-4"
-                          >
-                            Login
-                          </a>
-                          <p className="mb-0 mt-4 text-center">
-                            <a
-                              href="https://www.web-leb.com/code"
-                              className="link"
-                            >
-                              Forgot your password?
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-back">
-                      <div className="center-wrap">
-                        <div className="section text-center">
-                          <h4 className="mb-3 pb-3">Sign Up</h4>
-                          <div className="form-group">
-                            <input
-                              type="text"
-                              className="form-style"
-                              placeholder="Full Name"
-                            />
-                            <i className="input-icon uil uil-user"></i>
-                          </div>
-                          <div className="form-group mt-2">
-                            <input
-                              type="tel"
-                              className="form-style"
-                              placeholder="Phone Number"
-                            />
-                            <i className="input-icon uil uil-phone"></i>
-                          </div>
-                          <div className="form-group mt-2">
-                            <input
-                              type="email"
-                              className="form-style"
-                              placeholder="Email"
-                            />
-                            <i className="input-icon uil uil-at"></i>
-                          </div>
-                          <div className="form-group mt-2">
-                            <input
-                              type="password"
-                              className="form-style"
-                              placeholder="Password"
-                            />
-                            <i className="input-icon uil uil-lock-alt"></i>
-                          </div>
-                          <a
-                            href="https://www.web-leb.com/code"
-                            className="btn mt-4"
-                          >
-                            Register
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section className="about">
+      <div className="main">
+      <img src="https://media.istockphoto.com/id/1145183123/ro/fotografie/tineri-voluntari-ferici%C8%9Bi-care-se-%C3%AEnt%C3%A2lnesc-%C3%AEn-aer-liber-%C3%AEn-parc.jpg?s=612x612&w=0&k=20&c=h0RWOh453UlV0S0JD4BA6l0yZGY50CUUHuRTPXe2850="/>
+        <div className="all-text">
+          <h4>Voluntariat</h4>
+          <h1>Aplică pentru a deveni voluntar la Clinica Apollo.</h1>
+          <p>Prin intermediul acestei secțiuni, încurajăm persoanele dornice să ofere timpul lor și abilitățile în slujba altora să se implice în activități de voluntariat în cadrul spitalului nostru. <br/>Dacă dorești să faci o schimbare, aplică să devii voluntar prin formularul de mai jos.</p>
+          <div className="btn-txt">
+            <button type="button">Descarcă</button>
           </div>
         </div>
       </div>
+    </section>
 
       <Footer />
     </>
