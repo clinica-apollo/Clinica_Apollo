@@ -1,8 +1,7 @@
 import { Navbar } from "../components/Navbar";
-
-import Doctor1 from "../assets/doctor1.jpg";
-import Doctor2 from "../assets/doctor2.jpg";
-import Doctor3 from "../assets/doctor3.jpg";
+import Consultatii from "../assets/consultatii.jpg";
+import Analize from "../assets/analize.jpg";
+import Farmacie from "../assets/farmacie.jpeg";
 import { Footer } from "../components/Footer";
 import { Link } from "react-router-dom";
 
@@ -24,65 +23,41 @@ export function Root() {
           </Link>
         </div>
       </section>
-      {/* despre noi */}
+    <section class="body-txt">
+      <div className="container-txt">
+      <div className="content">
+        <h1 className="h1-txt">Sănătatea dumneavoastră este prioritatea noastră.</h1>
+        <p className="p-txt">La Clinica Apollo, credem într-un viitor în care fiecare persoană are acces la îngrijiri medicale de calitate, indiferent de situația sa financiară. De aceea, suntem complet dependenți de generozitatea și susținerea dumneavoastră. Fiecare donație aduce mai aproape de realitate viziunea noastră: să oferim îngrijiri de top, tratamente inovatoare și tehnologii avansate pacienților noștri.</p>
+      </div>
+      <div className="imge-container">
+        <img src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagine" className="image-txt" />
+      </div>
+    </div>
+    </section>
       <section className="despre">
-        <h1>Doctori</h1>
-        <p1>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit velit
-          quisquam dolor aperiam debitis at rem!
-        </p1>
         <div className="row">
           <div className="doctori-col">
-            <img src={Doctor1} alt="poza locatie" />
+            <img src={Farmacie} alt="poza"/>
+          
             <div className="layer">
-              <h3>DOCTOR 1</h3>
+              <h3><a className="btn">Farmacie</a></h3>
             </div>
           </div>
-          <div className="doctori-col">
-            <img src={Doctor2} alt="poza locatie" />
-            <div className="layer">
-              <h3>DOCTOR 2</h3>
-            </div>
+           <div className="doctori-col">
+              <img src={Consultatii} alt="poza"/>
+              <div className="layer">
+                 <h3><Link to="/servicii" className="btn">Consultatii</Link></h3> 
+              </div>
           </div>
           <div className="doctori-col">
-            <img src={Doctor3} alt="poza locatie" />
-            <div className="layer">
-              <h3>DOCTOR 3</h3>
-            </div>
+              <img src={Analize} alt="poza"/>
+              <div className="layer">
+                <h3><a href="" className="btn">Analize</a></h3>
+              
+              </div>
           </div>
         </div>
       </section>
-      {/* servicii */}
-      <section className="servicii">
-        <h1>Servicii</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Voluptatibus, ab repudiandae officiis est nesciunt quas, ducimus saepe
-          corrupti, doloribus dignissimos nihil iusto cupiditate vitae deserunt
-          quia laudantium commodi. Mollitia, tenetur!
-        </p>
-        <div className="row">
-          <div className="ser-col">
-            <h3>Servicii</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium asperiores dignissimos ipsam corrupti iusto, tempore
-              minus nam non debitis nulla? Iure nobis fuga aperiam inventore
-              doloribus consequuntur molestias error nisi.
-            </p>
-          </div>
-          <div className="ser-col">
-            <h3>Specializari</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium asperiores dignissimos ipsam corrupti iusto, tempore
-              minus nam non debitis nulla? Iure nobis fuga aperiam inventore
-              doloribus consequuntur molestias error nisi.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </>
   );
