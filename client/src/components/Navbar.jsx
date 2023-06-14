@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { NavbarAuth } from "./NavbarAuth";
 
 export function Navbar() {
   function showMenu() {
@@ -36,6 +37,7 @@ export function Navbar() {
           </ul>
         </div>
         <i className="fa fa-bars" onClick={showMenu}></i>
+        <NavbarAuth />
       </nav>
     </>
   );
