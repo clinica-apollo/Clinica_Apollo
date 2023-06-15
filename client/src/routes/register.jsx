@@ -4,7 +4,6 @@ import { Navbar } from "../components/Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import { request } from "../utils/http";
 
-
 export function Register() {
   const navigate = useNavigate();
 
@@ -102,18 +101,6 @@ export function Register() {
                   onChange={(event) => setConfirmPassword(event.target.value)}
                   required
                 />
-              </div>
-              <div className="input-field">
-                <i className="fa-solid fa-lock"></i>
-                <input
-                  type="checkbox"
-                  placeholder="Terms&conditions"
-                  required
-                />
-              </div>
-              <div className="input-field">
-                <i className="fa-solid fa-lock"></i>
-                <input type="checkbox" placeholder="Newsletter" />
               </div>
               <div className="btn-field">
                 <button type="submit" id="signupBtn">

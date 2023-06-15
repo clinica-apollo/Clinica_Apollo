@@ -120,13 +120,13 @@ nav .fa{
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
-  
+
 }
  .h3-serv{
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
-} 
+}
 .ser-col:hover{
   box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
@@ -138,8 +138,8 @@ nav .fa{
 .despre{
   padding-top: 0;
   width: 100%;
-  text-align: center;  
-  margin-top: 0; 
+  text-align: center;
+  margin-top: 0;
 }
 .doctori-col{
   flex-basis: 32%;
@@ -151,12 +151,12 @@ nav .fa{
 .doctori-col img{
   width: 100%;
   display: block;
-  object-fit: cover; 
-  aspect-ratio: 1/1; 
+  object-fit: cover;
+  aspect-ratio: 1/1;
 }
 .ser h3{
   color: #fff;
-} 
+}
 .layer{
   background: rgba(4,9,30,0.7);
   height: 100%;
@@ -207,7 +207,7 @@ transition: 1s;
   justify-content: center;
   align-items: center;
   height: 70vh;
-  
+
 }
 
 .container-txt {
@@ -370,7 +370,7 @@ transition: 1s;
       padding-top: 10%;
   }
 }
- .location{  map<3 
+ .location{  map<3
   margin: auto;
   display: flex;
   justify-content: center;
@@ -379,7 +379,7 @@ transition: 1s;
 }
 .location iframe{
   width:90%;
-} 
+}
 /* date de contact */
 /* .container{
   display: flex;
@@ -393,7 +393,7 @@ transition: 1s;
   align-items: center;
   flex-direction:row;
   text-align: center;
-  
+
 }
 .cont-col div{
   display: flex;
@@ -431,7 +431,7 @@ transition: 1s;
   background: #fff;
   padding: 50px 60px 70px;
   padding-bottom: 15%;
-  text-align: center;    
+  text-align: center;
 }
 .form-box h1{
   font-size: 200%;
@@ -503,9 +503,9 @@ input{
 }
 .checkbox{
     display: inline-flex;
-   
+
     cursor: pointer;
-    
+
 }
 /*footer design*/
  /* footer{
@@ -563,11 +563,11 @@ form{
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
   margin-bottom: 50px;
-}     
+}
 form .fa-regular{
   font-size: 18px;
   margin-right: 10px;
-} 
+}
 form input{
   width: 100%;
   color: #ccc;
@@ -588,7 +588,7 @@ form button{
   outline: none;
 }
 .social-icons .fa-brands{
-  width: 40px; 
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   text-align: center;
@@ -649,7 +649,7 @@ margin-top: 50%;
   flex-direction: column;
   width: 90%;
   margin-top: 30%;
-  position: absolute; 
+  position: absolute;
 }
 
 .imge-container {
@@ -688,7 +688,7 @@ margin-top: 50%;
   padding-top: 10%;
   width: 100%;
   height: 40%;
-} 
+}
 
 footer{
   bottom: unset;
@@ -711,4 +711,15 @@ footer{
   .form-box{
     padding-bottom:100%;
   }
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }

@@ -54,7 +54,7 @@ export function Donatii() {
                 padding: "0.5em",
               }}
             >
-              Donatii totale: {donationsTotal}
+              Donatii totale: {donationsTotal} lei
             </div>
             </div>
             <h1>Acum poți face o diferență în viețile pacienților noștri!</h1>
