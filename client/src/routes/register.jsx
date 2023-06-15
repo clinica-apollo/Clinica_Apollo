@@ -4,6 +4,7 @@ import { Navbar } from "../components/Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import { request } from "../utils/http";
 
+
 export function Register() {
   const navigate = useNavigate();
 

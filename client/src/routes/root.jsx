@@ -23,37 +23,36 @@ export function Root() {
           </Link>
         </div>
       </section>
-    <section class="body-txt">
+        <section className="body-txt">
       <div className="container-txt">
-      <div className="content">
-        <h1 className="h1-txt">Sănătatea dumneavoastră este prioritatea noastră.</h1>
-        <p className="p-txt">La Clinica Apollo, credem într-un viitor în care fiecare persoană are acces la îngrijiri medicale de calitate, indiferent de situația sa financiară. De aceea, suntem complet dependenți de generozitatea și susținerea dumneavoastră. Fiecare donație aduce mai aproape de realitate viziunea noastră: să oferim îngrijiri de top, tratamente inovatoare și tehnologii avansate pacienților noștri.</p>
+        <div className="content">
+          <h1 className="h1">Sănătatea dumneavoastră este prioritatea noastră.</h1>
+          <p className="p">La Clinica Apollo, credem într-un viitor în care fiecare persoană are acces la îngrijiri medicale de calitate, indiferent de situația sa financiară. De aceea, suntem complet dependenți de generozitatea și susținerea dumneavoastră. Fiecare donație aduce mai aproape de realitate viziunea noastră: să oferim îngrijiri de top, tratamente inovatoare și tehnologii avansate pacienților noștri.</p>
+        </div>
+        <div className="imge-container">
+          <img src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagine" className="image-txt" />
+        </div>
       </div>
-      <div className="imge-container">
-        <img src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagine" className="image-txt" />
-      </div>
-    </div>
-    </section>
+    </section> 
       <section className="despre">
         <div className="row">
           <div className="doctori-col">
             <img src={Farmacie} alt="poza"/>
           
             <div className="layer">
-              <h3><a className="btn">Farmacie</a></h3>
+              <h3><Link to="/farmacie" className="btn">Farmacie</Link></h3>
             </div>
           </div>
            <div className="doctori-col">
               <img src={Consultatii} alt="poza"/>
               <div className="layer">
-                 <h3><Link to="/servicii" className="btn">Consultatii</Link></h3> 
+                 <h3><Link to="/programari" className="btn">Consultatii</Link></h3> 
               </div>
           </div>
           <div className="doctori-col">
               <img src={Analize} alt="poza"/>
               <div className="layer">
-                <h3><a href="" className="btn">Analize</a></h3>
-              
+                <h3><Link to="/analize" className="btn">Analize</Link></h3>
               </div>
           </div>
         </div>

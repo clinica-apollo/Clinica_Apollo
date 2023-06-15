@@ -16,7 +16,9 @@ export function Voluntariat() {
           <h1>Aplică pentru a deveni voluntar la Clinica Apollo.</h1>
           <p>Prin intermediul acestei secțiuni, încurajăm persoanele dornice să ofere timpul lor și abilitățile în slujba altora să se implice în activități de voluntariat în cadrul spitalului nostru. <br/>Dacă dorești să faci o schimbare, aplică să devii voluntar prin formularul de mai jos.</p>
           <div className="btn-txt">
-            <button type="button">Descarcă</button>
+          <a href="/volunteer_aplication.pdf">
+              <button type="button">Descarcă</button>
+          </a>
           </div>
         </div>
       </div>
