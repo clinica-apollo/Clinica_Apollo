@@ -22,6 +22,7 @@ export function Account() {
               <input type="email" placeholder="Email" />
         </div>
         </section>
+        <Footer />
         </>
     );
 }
