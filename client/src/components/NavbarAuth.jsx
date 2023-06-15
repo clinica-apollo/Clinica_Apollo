@@ -21,11 +21,16 @@ export function NavbarAuth() {
   }, []);
 
   return user !== null ? (
-    <div>{user.first_name}</div>
+    <li><Link to="/account">{user.first_name}</Link></li>
+
   ) : (
     <>
-      <Link to="/login">Login</Link>
-      <Link to="/register">Register</Link>
+
+
+        <li><Link to="/login">LOGIN</Link></li>
+        <li><Link to="/register">REGISTER</Link></li>
+  
+ 
     </>
   );
 }
