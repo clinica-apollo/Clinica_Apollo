@@ -1,0 +1,41 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v0.26.1/db",
+  "server": {
+    "hostname": "{PLT_SERVER_HOSTNAME}",
+    "port": "{PORT}",
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    },
+    "cors": {
+      "origin": "{PLT_SERVER_CORS_ORIGIN}"
+    }
+  },
+  "db": {
+    "connectionString": "{DATABASE_URL}",
+    "graphql": true,
+    "openapi": true
+  },
+  "authorization": {
+    "jwt": {
+      "secret": "{PLT_AUTHORIZATION_JWT_SECRET}"
+    },
+    "rules": [
+      {
+        "role": "anonymous",
+        "entity": "user",
+        "find": true
+      }
+    ]
+  },
+  "migrations": {
+    "dir": "migrations"
+  },
+  "plugins": {
+    "paths": [
+      "plugin.js"
+    ]
+  },
+  "types": {
+    "autogenerate": true
+  }
+}
