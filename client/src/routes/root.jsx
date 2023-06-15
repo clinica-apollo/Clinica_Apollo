@@ -13,13 +13,10 @@ export function Root() {
         <div className="text-box">
           <h1>Clinica Apollo</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            magni reiciendis! Deleniti quas, voluptatibus harum
-            <br /> numquam beatae nihil accusamus excepturi voluptas repudiandae
-            repellat quis officia iure recusandae illo vero dolore?
+          Alătură-te misiunii noastre de a oferi îngrijire medicală de calitate pentru toți, indiferent de posibilități financiare. Împreună putem face o<br/> diferență semnificativă în viața celor nevoiași. Donează astăzi și fii un erou în lupta pentru sănătate și fericire!
           </p>
           <Link to="/despre-noi" className="button-contact">
-            Contact us
+            Contactează-ne
           </Link>
         </div>
       </section>

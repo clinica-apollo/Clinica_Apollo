@@ -1,12 +1,18 @@
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo2.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
 export function Footer() {
   return (
     <>
     <div></div>
-     {/*   <footer>
+        <footer>
        <script src="https://kit.fontawesome.com/4f82f23ccb.js" crossorigin="anonymous"></script>
       <div className="footer-row">
         <div className="footer-col">
-          <img src="logo3.png" alt="logo" className="footer-logo" />
+          <img src={Logo} alt="logo" className="footer-logo" />
           <p>
             Suntem dedicați să oferim servicii medicale de calitate superioară și îngrijire de
             încredere pacienților noștri. Echipa noastră de profesioniști medicali calificați și
@@ -18,7 +24,7 @@ export function Footer() {
           <h3>Contact</h3>
           <p>Strada</p>
           <p>Orasul, Tara</p>
-          <p>Codul postal?????</p>
+          <p>Codul postal</p>
           <p className="email-id">abc@email.com</p>
           <h4>+40 72xyzxyz</h4>
         </div>
@@ -26,43 +32,43 @@ export function Footer() {
           <h3>Links</h3>
           <ul>
             <li>
-              <a href="">Acasa</a>
+            <Link to="/"></Link>
             </li>
             <li>
-              <a href="">Despre noi</a>
+            <Link to="/desprenoi">Despre noi</Link>
             </li>
             <li>
-              <a href="">Servicii</a>
+            <Link to="/voluntariat">Voluntariat</Link>
             </li>
             <li>
-              <a href="">Voluntariat</a>
+            <Link to="/doneaza">Doneaza</Link>
             </li>
             <li>
-              <a href="">Doneaza</a>
+            <Link to="/login">Login</Link>
             </li>
             <li>
-              <a href="">Login</a>
+            <Link to="/register">Register</Link>
             </li>
           </ul>
         </div>
         <div className="footer-col">
           <h3>Newsletter</h3>
           <form>
-            <i className="fa-regular fa-envelope"></i>
+          <FontAwesomeIcon icon={faEnvelope} />
             <input type="email" placeholder="Introduceti adresa de email" required />
             <button type="submit">
-              <i className="fa-solid fa-arrow-right-to-bracket"></i>
+            <FontAwesomeIcon icon={faArrowRightFromBracket} />
             </button>
           </form>
-          <div className="social-icons">
+          {/* <div className="social-icons">
             <i className="fa-brands fa-facebook"></i>
             <i className="fa-brands fa-twitter"></i>
             <i className="fa-brands fa-instagram"></i>
             <i className="fa-brands fa-linkedin"></i>
-          </div>
+          </div> */}
         </div>
       </div>
-    </footer>*/}
+    </footer>
     </> 
   );
 }
