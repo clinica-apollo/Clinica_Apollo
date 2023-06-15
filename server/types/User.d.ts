@@ -8,7 +8,7 @@ declare interface User {
     passwordHash: string;
     firstName: string;
     lastName: string;
-    createdAt: string;
-    updatedAt: string;
+    createdAt?: string | null;
+    updatedAt?: string | null;
 }
 export { User };

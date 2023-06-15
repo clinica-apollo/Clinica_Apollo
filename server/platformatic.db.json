@@ -7,7 +7,10 @@
       "level": "{PLT_SERVER_LOGGER_LEVEL}"
     },
     "cors": {
-      "origin": "{PLT_SERVER_CORS_ORIGIN}"
+      "origin": [
+        "{PLT_SERVER_CORS_ORIGIN}",
+        "https://apolloclinic.site"
+      ]
     }
   },
   "db": {
@@ -24,6 +27,12 @@
         "role": "anonymous",
         "entity": "user",
         "find": true
+      },
+      {
+        "role": "anonymous",
+        "entity": "donation",
+        "find": true,
+        "save": true
       }
     ]
   },

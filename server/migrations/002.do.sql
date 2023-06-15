@@ -1,0 +1,7 @@
+CREATE TABLE donations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id UUID NOT NULL,
+    amount INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
