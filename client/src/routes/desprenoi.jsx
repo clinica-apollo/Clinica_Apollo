@@ -1,5 +1,6 @@
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 export function DespreNoi() {
   return (
@@ -20,11 +21,15 @@ export function DespreNoi() {
         ></iframe>
         <div className="all-text">
           <h4>Despre noi</h4>
-          <h1>Descoperă unde ne găsești și cum să ajungi la noi</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis id ab totam error mollitia</p>
+          <h1>Acces ușor către centrul nostru medical modern</h1>
+          <p>Venind la spitalul nostru, veți găsi un mediu sigur și confortabil, în care ne concentrăm pe nevoile dumneavoastră de sănătate și vă oferim servicii medicale de încredere.</p>
           <div className="btn-txt">
-            <button type="button">Fa o donatie</button>
-            <button type="button">Programeaza-te</button>
+          <Link to="/doneaza">
+              <button type="button">Fa o donatie</button>
+            </Link>
+            <Link to="/programari">
+              <button type="button">Programeaza-te</button>
+            </Link>
           </div>
         </div>
       </div>

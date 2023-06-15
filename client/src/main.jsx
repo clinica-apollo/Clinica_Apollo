@@ -11,6 +11,10 @@ import { Login } from "./routes/login";
 import { Register } from "./routes/register";
 import { ResetPassword } from "./routes/reset-password";
 import { Account } from "./routes/account";
+import { Farmacie } from "./routes/farmacie";
+import { Analize } from "./routes/analize";
+import { Programari } from "./routes/programari";
+
 
 const router = createBrowserRouter([
   {
@@ -44,6 +48,18 @@ const router = createBrowserRouter([
   {
     path: "/account",
     element: <Account/>,
+  },
+  {
+    path: "/farmacie",
+    element: <Farmacie/>,
+  },
+  {
+    path: "/programari",
+    element: <Programari/>,
+  },
+  {
+    path: "/analize",
+    element: <Analize/>,
   },
 ]);
 

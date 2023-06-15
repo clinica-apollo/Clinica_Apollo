@@ -38,6 +38,10 @@ nav img{
   position:relative;
 
 }
+.nav-links ul{
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+}
 .nav-links ul li a{ /* for the text navbar */
   color: white;
   text-decoration: none;
@@ -310,7 +314,7 @@ transition: 1s;
   line-height: 30px;
   margin-bottom: 30px;
 }
-.btn-txt button{
+.btn-txt button {
   background: white;
   padding: 20px 32px;
   font-size: 16px;
@@ -408,7 +412,7 @@ transition: 1s;
   display: flex;
   justify-content: space-between;
 } */
-
+/*register sau login*/
 .log-cont{
   width:100%;
   height:100vh;
@@ -426,6 +430,7 @@ transition: 1s;
   transform: translate(-50%, -50%);
   background: #fff;
   padding: 50px 60px 70px;
+  padding-bottom: 15%;
   text-align: center;    
 }
 .form-box h1{
@@ -454,12 +459,19 @@ transition: 1s;
   max-height: 65px;
   overflow: hidden;
 }
+.input-group a{
+  text-decoration: none;
+}
 input{
   width: 100%;
   background: transparent;
   border: 0;
   outline: 0;
   padding: 18px 15px;
+}
+.checkbox input{
+  width: 4%;
+  align-items: flex-start;
 }
 .input-field i{
   margin-left: 15px;
@@ -488,6 +500,12 @@ input{
 {
   background: #eaeaea;
   color: #555;
+}
+.checkbox{
+    display: inline-flex;
+   
+    cursor: pointer;
+    
 }
 /*footer design*/
  /* footer{
@@ -684,4 +702,13 @@ footer{
 .sub-header{
   padding-bottom: 30%;
 }
+.form-box{
+  padding-bottom: 50%;
+}
+}
+@media (max-width: 1200)
+{
+  .form-box{
+    padding-bottom:100%;
+  }
 }
