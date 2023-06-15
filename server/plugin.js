@@ -74,6 +74,24 @@ module.exports = async function (app) {
 
     return res.send({ token });
   });
+
+  app.graphql.extendSchema(`
+    extend type Query {
+      donationsTotal: Int!
+    }
+  `);
+
+  app.graphql.defineResolvers({
+    Query: {
+      donationsTotal: async (root, args, context) => {
+        const [total] = await db.query(sql`
+          SELECT SUM(amount) AS total FROM donations
+        `);
+
+        return total.total;
+      },
+    },
+  });
 };
 
 function generateToken(app, userId) {

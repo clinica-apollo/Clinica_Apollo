@@ -30,14 +30,14 @@ export function Navbar() {
               <Link to="/voluntariat">VOLUNTARIAT</Link>
             </li>
             <li>
-              <Link to="/doneaza">DONEAZĂ</Link>
+              <Link to="/Donatii">DONATII</Link>
             </li>
             <NavbarAuth />
           </ul>
-          
+
         </div>
         <i className="fa fa-bars" onClick={showMenu}></i>
-      
+
       </nav>
     </>
   );

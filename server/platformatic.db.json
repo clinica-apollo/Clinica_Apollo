@@ -33,6 +33,12 @@
         "entity": "donation",
         "find": true,
         "save": true
+      },
+      {
+        "role": "user",
+        "entity": "donation",
+        "find": true,
+        "save": true
       }
     ]
   },

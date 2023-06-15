@@ -59,7 +59,6 @@ export function Login() {
                   placeholder="Password"
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
-                  s
                   required
                 />
               </div>

@@ -7,6 +7,7 @@ import { Root } from "./routes/root.jsx";
 import { DespreNoi } from "./routes/desprenoi.jsx";
 import { Voluntariat } from "./routes/voluntariat";
 import { Doneaza } from "./routes/doneaza";
+import { Donatii } from "./routes/donatii";
 import { Login } from "./routes/login";
 import { Register } from "./routes/register";
 import { ResetPassword } from "./routes/reset-password";
@@ -14,7 +15,7 @@ import { Account } from "./routes/account";
 import { Farmacie } from "./routes/farmacie";
 import { Analize } from "./routes/analize";
 import { Programari } from "./routes/programari";
-
+import { MultumimPentruDonatie } from "./routes/multumim-pentru-donatie";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
     element: <Doneaza />,
   },
   {
+    path: "/donatii",
+    element: <Donatii />,
+  },
+  {
     path: "/login",
     element: <Login />,
   },
@@ -47,19 +52,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/account",
-    element: <Account/>,
+    element: <Account />,
   },
   {
     path: "/farmacie",
-    element: <Farmacie/>,
+    element: <Farmacie />,
   },
   {
     path: "/programari",
-    element: <Programari/>,
+    element: <Programari />,
   },
   {
     path: "/analize",
-    element: <Analize/>,
+    element: <Analize />,
+  },
+  {
+    path: "/multumim-pentru-donatie",
+    element: <MultumimPentruDonatie />,
   },
 ]);
 

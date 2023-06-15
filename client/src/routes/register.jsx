@@ -12,9 +12,15 @@ export function Register() {
   const [lastName, setLastName] = useState(``);
   const [email, setEmail] = useState(``);
   const [password, setPassword] = useState(``);
+  const [confirmPassword, setConfirmPassword] = useState(``);
 
   async function onSubmit(event) {
     event.preventDefault();
+
+    if (password !== confirmPassword) {
+      alert(`Passwords do not match`);
+      return;
+    }
 
     const { token } = await request(`/register`, {
       method: `POST`,
@@ -92,6 +98,8 @@ export function Register() {
                 <input
                   type="password"
                   placeholder="Confirm password"
+                  value={confirmPassword}
+                  onChange={(event) => setConfirmPassword(event.target.value)}
                   required
                 />
               </div>

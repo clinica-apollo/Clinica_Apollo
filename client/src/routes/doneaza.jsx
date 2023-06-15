@@ -1,26 +1,66 @@
+import { useState } from "react";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import { useUser } from "../hooks/useUser";
+import { request } from "../utils/http";
+import { useNavigate } from "react-router-dom";
 
 export function Doneaza() {
+  const navigate = useNavigate();
+
+  const [user, setUser] = useUser();
+  const [amount, setAmount] = useState(0);
+
+  async function onSubmit(event) {
+    event.preventDefault();
+
+    await request(`/donations`, {
+      method: `POST`,
+      body: JSON.stringify({
+        userId: user.id,
+        amount,
+      }),
+    });
+
+    navigate(`/multumim-pentru-donatie`);
+  }
+
   return (
     <>
-       <section className="sub-header">
+      <section className="sub-header">
         <Navbar />
         <h1>Donează</h1>
       </section>
-      <section className="about">
-      <div className="main">
-      <img src="https://media.istockphoto.com/id/888343166/photo/make-this-world-a-brighter-place.jpg?s=612x612&w=0&k=20&c=6MQkcSUhlqeNby6OhsrUhMh0Z-dUB3OUc3JDk9NwB0A="/>
-        <div className="all-text">
-          <h4>Fă o donație!</h4>
-          <h1>Acum poți face o diferență în viețile pacienților noștri!</h1>
-          <p>Fiecare donație contează! Indiferent de mărimea sau frecvența contribuțiilor tale, vei face o contribuție valoroasă în lupta împotriva bolilor și în îmbunătățirea vieților celor aflați în suferință.</p>
-          <div className="btn-txt">
-            <button type="button">Donează</button>
-          </div>
+      <div className="log-cont">
+        <script
+          src="https://kit.fontawesome.com/4f82f23ccb.js"
+          crossOrigin="anonymous"
+        ></script>
+        <div className="form-box">
+          <h1 id="title">Donează</h1>
+          <form onSubmit={onSubmit}>
+            <div className="input-group">
+              <div className="input-field">
+                <i className="fa-solid fa-lock"></i>
+                <input
+                  type="number"
+                  placeholder="Suma"
+                  value={amount}
+                  onChange={(event) => setAmount(event.target.value)}
+                />
+                <label htmlFor="amount" style={{ paddingRight: "2em" }}>
+                  lei
+                </label>
+              </div>
+              <div className="btn-field">
+                <button type="submit" id="signinBtn">
+                  Donează
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
 
       <Footer />
     </>

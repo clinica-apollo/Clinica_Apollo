@@ -741,6 +741,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-router-dom: "npm:^6.11.2"
+    react-use-localstorage: "npm:^3.5.3"
     vite: "npm:^4.3.2"
   languageName: unknown
   linkType: soft
@@ -1546,6 +1547,15 @@ __metadata:
   peerDependencies:
     react: ">=16.8"
   checksum: def0b9b47fb2b699101b4980635747960009372668a16daa2537da1f3e62c6a649ff3bf497640b7920e15122c087b875ceb5d535f07fbfc982dde4ac974b89ab
+  languageName: node
+  linkType: hard
+
+"react-use-localstorage@npm:^3.5.3":
+  version: 3.5.3
+  resolution: "react-use-localstorage@npm:3.5.3"
+  peerDependencies:
+    react: ">=16.8.1"
+  checksum: b63a8308dd016fd20538fc78070775ada44661661cfe03327c4206ba46a4ff71e8c984d9db5db26858eb8870a94271c0b589da01c9a5d22b714bc52d1ac91fb6
   languageName: node
   linkType: hard
 
