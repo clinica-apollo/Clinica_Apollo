@@ -25,7 +25,7 @@ export function ResetPassword() {
           </div>
         </form>
       </div>
-    </div></>
+    </div> <Footer /></>
   );
 };
 

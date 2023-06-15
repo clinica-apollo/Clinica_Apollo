@@ -508,15 +508,15 @@ input{
 
 }
 /*footer design*/
- /* footer{
+  footer{
   width: 100%;
-  position: absolute;
+  
   bottom: 0;
-  background: linear-gradient(to right, #5f6377, #1f263a);
+  background: linear-gradient(to right, #4b516e, #253245);
   color: #fff;
   padding: 100px 0 30px;
   border-top-left-radius: 125px;
-  border-top-right-radius: 125px;
+  
   font-size: 12px;
   line-height: 20px;
 }
@@ -578,7 +578,7 @@ form input{
 form button{
   cursor: pointer;
 }
-form button .fa-solid{
+form button {
   font-size: 16px;
   color: #ccc;
 }
@@ -599,7 +599,7 @@ form button{
   margin-right: 15px;
   cursor: pointer;
 }
- */
+ 
  @media (max-width:768px){
   .logo{
     width: auto;
@@ -704,6 +704,10 @@ footer{
 }
 .form-box{
   padding-bottom: 50%;
+}
+.footer-col{
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 }
 @media (max-width: 1200)

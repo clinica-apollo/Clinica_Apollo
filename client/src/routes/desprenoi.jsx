@@ -22,7 +22,7 @@ export function DespreNoi() {
         <div className="all-text">
           <h4>Despre noi</h4>
           <h1>Acces ușor către centrul nostru medical modern</h1>
-          <p>Venind la spitalul nostru, veți găsi un mediu sigur și confortabil, în care ne concentrăm pe nevoile dumneavoastră de sănătate și vă oferim servicii medicale de încredere.</p>
+          <p>Ne concentrăm pe tratamentul și îngrijirea pacienților care se confruntă cu afecțiuni grave și cu resurse financiare limitate. Fie că este vorba de intervenții chirurgicale salvatoare, terapii inovatoare sau tratamente complexe, ne străduim să asigurăm servicii medicale de înaltă calitate, pentru a reda speranța și a îmbunătăți calitatea vieții pacienților noștri.</p>
           <div className="btn-txt">
           <Link to="/donatii">
               <button type="button">Fa o donatie</button>
